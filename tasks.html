@@ -1,13 +1,13 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="utf-8" />
-	<link rel="icon" type="image/png" href="assets/img/favicon.ico">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-
-	<title>Light Bootstrap Dashboard by Creative Tim</title>
-
-	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    
+    <title>CT-MX</title>
+    
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
 
 
@@ -19,11 +19,6 @@
 
     <!--  Light Bootstrap Table core CSS    -->
     <link href="assets/css/light-bootstrap-dashboard.css?v=1.4.0" rel="stylesheet"/>
-
-
-    <!--  CSS for Demo Purpose, don't include it in your project     -->
-    <link href="assets/css/demo.css" rel="stylesheet" />
-
 
     <!--     Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -38,17 +33,9 @@
 
 <div class="wrapper">
     <div class="sidebar" data-color="blue" data-image="assets/img/triangles.jpg">
-
-    <!--
-
-        Tip 1: you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple"
-        Tip 2: you can also add an image using data-image tag
-
-    -->
-
     	<div class="sidebar-wrapper">
             <div class="logo">
-                <a href="http://www.creative-tim.com" class="simple-text">
+                <a href="#" class="simple-text">
                     CT-MX
                 </a>
             </div>
@@ -59,12 +46,12 @@
                         <i class="pe-7s-note2"></i>
                         <p>
 			    Tareas
-			    <i class="pe-7s-angle-right" style="float: right;margin: 0px;"></i>
+			    <i class="pe-7s-angle-right m-icon-angle" ></i>
 			</p>
                     </a>
                 </li>
 		<li id="tareas-submenu" class="collapse submenu"  >
-		    <ul style="list-style-type:none">
+		    <ul class="m-list-menu" >
                         <li>
                             <a href="tasks.html">
                                 <i class="pe-7s-notebook"></i>
@@ -84,12 +71,12 @@
                         <i class="pe-7s-settings"></i>
                         <p>
 			    Administración  
-			    <i class="pe-7s-angle-right" style="float: right;margin: 0px;"></i>  
+			    <i class="pe-7s-angle-right m-icon-angle"></i>
 			</p>
                     </a>
 		</li>
 		<li id="administracion-submenu" class="collapse submenu"  >
-		    <ul style="list-style-type:none">
+		    <ul class="m-list-menu">
                         <li>
                             <a href="users.html">
                                 <i class="pe-7s-id"></i>
@@ -97,13 +84,13 @@
                             </a>
                         </li>
 		        <li>
-                            <a hre="user.html">
+                            <a href="areas.html">
                                 <i class="pe-7s-map"></i>
                                 <p>Areas</p>
                             </a>
                         </li>
 		        <li>
-                            <a hre="user.html">
+                            <a href="roles.html">
                                 <i class="pe-7s-users"></i>
                                 <p>Roles</p>
                             </a>
@@ -150,7 +137,7 @@
         <div class="content">
             <div class="container-fluid">
 		<div class="row">
-		    <a href="createtask.html">
+		    <a href="create_task.html">
 		        <button class="m-button">
 		            Agregar nueva tarea
 		        </button>
@@ -162,7 +149,7 @@
                     <div class="col-md-12">
                         <div class="card">
                             <div class="content table-responsive table-full-width table-upgrade">
-                                <table id="tasks" class="table">
+                                <table id="tasks" class="table m-table-select">
                                     <thead>
                                         <th class="text-center">Tarea</th>
                                     	<th class="text-center">Área</th>
@@ -172,7 +159,7 @@
                                     	<th class="text-center">Fecha Final</th>
                                     </thead>
                                     <tbody>
-                                        <tr>
+                                        <tr onclick="document.location = 'task.html';">
                                         	<td>Vender producto</td>
                                         	<td>Ingeniería</td>
                                         	<td>Urgencia</td>
@@ -180,7 +167,7 @@
                                         	<td>2/04/2018</td>
                                         	<td>7/05/2018</td>
                                         </tr>
-                                        <tr>
+                                        <tr onclick="document.location = 'task.html';">
                                         	<td>Vender producto</td>
                                         	<td>Ingeniería</td>
                                         	<td>Normal</td>
@@ -188,7 +175,7 @@
                                         	<td>2/04/2018</td>
                                         	<td>7/05/2018</td>
                                         </tr>
-                                        <tr>
+                                        <tr onclick="document.location = 'task.html';">
                                         	<td>Vender producto</td>
                                         	<td>Ingeniería</td>
                                         	<td>Urgencia</td>
@@ -196,7 +183,7 @@
                                         	<td>2/04/2018</td>
                                         	<td>7/05/2018</td>
                                         </tr>
-                                        <tr>
+                                        <tr onclick="document.location = 'task.html';">
                                         	<td>Entrevista</td>
                                         	<td>Ingeniería</td>
                                         	<td>Urgencia</td>
@@ -204,7 +191,7 @@
                                         	<td>2/04/2018</td>
                                         	<td>7/05/2018</td>
                                         </tr>
-                                        <tr>
+                                        <tr onclick="document.location = 'task.html';">
                                         	<td>Visitar cliente</td>
                                         	<td>Ingeniería</td>
                                         	<td>Urgencia</td>
