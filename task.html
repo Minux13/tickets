@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" type="image/png" href="assets/img/favicon.ico">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>Light Bootstrap Dashboard by Creative Tim</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+
+    <!-- Bootstrap core CSS     -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Animation library for notifications   -->
+    <link href="assets/css/animate.min.css" rel="stylesheet"/>
+
+    <!--  Light Bootstrap Table core CSS    -->
+    <link href="assets/css/light-bootstrap-dashboard.css?v=1.4.0" rel="stylesheet"/>
+
+    <!--     Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
+
+
+    <!--      Select2      -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+
+    <!--      Jquery-UI (for calendar)    -->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    
+    <!--      Modificacionts for Tickets    -->
+    <link rel="stylesheet" href="assets/css/tickets.css">
+
+
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="sidebar" data-color="blue" data-image="">
+
+    <!--
+
+        Tip 1: you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple"
+        Tip 2: you can also add an image using data-image tag
+
+    -->
+
+    	<div class="sidebar-wrapper">
+            <div class="logo">
+                <a href="http://www.creative-tim.com" class="simple-text">
+                    CT-MX
+                </a>
+            </div>
+
+            <ul class="nav">
+	        <li data-toggle="collapse" data-target="#tareas-submenu">
+                    <a href="#">
+                        <i class="pe-7s-note2"></i>
+                        <p>
+			    Tareas
+			    <i class="pe-7s-angle-right" style="float: right;margin: 0px;"></i>
+			</p>
+                    </a>
+                </li>
+		<li id="tareas-submenu" class="collapse submenu"  >
+		    <ul style="list-style-type:none">
+                        <li>
+                            <a href="tasks.html">
+                                <i class="pe-7s-notebook"></i>
+                                <p>Tareas</p>
+                            </a>
+                        </li>
+		        <li>
+                            <a href="tasks.html">
+                                <i class="pe-7s-note"></i>
+                                <p>Mis tareas</p>
+                            </a>
+                        </li>
+		    </ul>
+		</li>
+		<li  data-toggle="collapse" data-target="#administracion-submenu" >
+                    <a href="#">
+                        <i class="pe-7s-settings"></i>
+                        <p>
+			    Administración  
+			    <i class="pe-7s-angle-right" style="float: right;margin: 0px;"></i>  
+			</p>
+                    </a>
+		</li>
+		<li id="administracion-submenu" class="collapse submenu"  >
+		    <ul style="list-style-type:none">
+                        <li>
+                            <a href="users.html">
+                                <i class="pe-7s-id"></i>
+                                <p>Usuarios</p>
+                            </a>
+                        </li>
+		        <li>
+                            <a hre="user.html">
+                                <i class="pe-7s-map"></i>
+                                <p>Areas</p>
+                            </a>
+                        </li>
+		        <li>
+                            <a hre="user.html">
+                                <i class="pe-7s-users"></i>
+                                <p>Roles</p>
+                            </a>
+                        </li>
+		    </ul>
+		</li>                
+            </ul>
+
+    	</div>
+    </div>
+
+    <div class="main-panel">
+	<nav class="navbar navbar-default navbar-fixed">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Nombre del bloque</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-left">                        
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+
+		    	<li>
+			 <a href="#">
+				<input  id="searchinput"  type="text" placeholder="Search..." >
+                                <i class="fa fa-search"></i>
+			 </a>
+                        </li>
+
+                        <li class="separator hidden-lg"></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-md-12">
+		    	
+			<div class="card card-user" style="margin-top: 35px;">
+                            <div class="content">
+                                <div class="author">
+                                     <a href="#">
+                                    	<img class="avatar border-gray" src="assets/img/nota.png" alt="..."/>
+                                    </a>
+                                </div>
+
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label for="name">Nombre</label>
+                                                <input type="text" class="form-control"  placeholder="Nombre" id="name" name="name" >
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+
+                                                <label for="areas">Áreas</label><br>
+						<select class="multiselect form-control" id="areas" name="areas[]" multiple="multiple">
+  						    <option value="AL">Ingeniería</option>
+  						    <option value="AL">Ingeniería</option>
+  						    <option value="WY">Contabilidad</option>
+  						    <option value="WY">Mantenimiento</option>
+  						    <option value="AL">Ingeniería</option>
+  						    <option value="WY">Contabilidad</option>
+  						    <option value="WY">Mantenimiento</option>
+  						    <option value="WY">Contabilidad</option>
+  						    <option value="WY">Mantenimiento</option>
+						</select>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+
+                                                <label for="users">Usuario Asignado</label><br>
+						<select class="form-control" id="user" name="user">
+  						    <option disabled selected value> -- Selecciona un Usuario -- </option>
+  						    <option value="AL">Victor</option>
+  						    <option value="WY">Alma</option>
+  						    <option value="WY">Nora</option>
+						</select>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label for="priority">Prioridad</label>
+                                                <select class="form-control" id="priority" name="priority">
+						    <option value="1" >Normal</option>
+						    <option value="2" >Urgente</option>
+						</select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+					   	<label for="visibility">Privacidad</label>
+                                                <select class="form-control" id="visibility" name="visibility">
+						    <option value="public">Público</option>
+						    <option value="private">Privado</option>
+						</select>
+                                            </div>
+                                        </div>
+					<div class="col-md-3">
+                                            <div class="form-group">
+					   	<label for="state">Estado</label>
+                                                <select class="form-control" id="state" name="state">
+						    <option value="unassigned" >No asignado </option>
+						    <option value="assigned"   >Asignado    </option>
+						    <option value="in_progress">En progreso </option>
+						    <option value="finished"   >Terminado   </option>
+						</select>
+                                            </div>
+                                        </div>
+					<div class="col-md-3">
+                                            <div class="form-group">
+					   	<label>Tiempo estimado</label>
+						<div class="m-time-select">
+                                                    <input type="number" min="0" class="m-number-time-select">				        
+						    <select class="m-range-time-select" >
+						        <option value="1" >Minutos </option>
+						        <option value="60" >Horas </option>
+						        <option value="1440">Días    </option>
+						        <option value="10080">Semanas</option>
+						    </select>
+                                            	</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+				    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                            	<label for="actions">Acciones</label>
+                                                <input type="text" class="form-control" id="actions" name="actions" >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+				    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label>Descripción</label>
+                                                <textarea rows="5" class="form-control" ></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-info btn-fill pull-right">Actualizar Usuario</button>
+                                    <div class="clearfix"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+</body>
+
+<!--   Core JS Files   -->
+<script src="assets/js/jquery.3.2.1.min.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+
+<!--      Select2      -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+
+<!--  Notifications Plugin    -->
+<script src="assets/js/bootstrap-notify.js"></script>
+
+<!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
+<script src="assets/js/light-bootstrap-dashboard.js?v=1.4.0"></script>
+
+<!-- Jquery-UI (For Calendar) -->
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+<script>	
+$(document).ready(function() {
+    $('.multiselect').select2();
+
+
+});
+
+</script>
+
+</html>
