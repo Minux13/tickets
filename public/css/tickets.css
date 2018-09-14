@@ -2,7 +2,6 @@
   display:none !important;
 }
 
-
 #searchinput {
   background: transparent; border: none; width:150px; border-bottom: solid 1px #aaa; transition: .25s linear;
 }
@@ -96,3 +95,30 @@
   display: inline;
   width: 80%;
 }
+
+/* Login */
+#login-body{
+  background: linear-gradient(140deg,  #77a, #448, #226, #004);
+  height: 100vh;
+}
+#login-body #container{
+  background: #ffffff;
+  width: 400px;
+  /* height: 400px; */
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 7px;
+  padding: 25px;
+  box-shadow: 0px 10px 30px 3px #666;
+}    
+     
+@media only screen and (max-width: 600px) {
+    #login-body #container {
+        width: 90%;
+    }
+}     
+@media only screen and (min-width: 1500px) {
+    #login-body #container {
+        width: 700px;
+    }
+}    
